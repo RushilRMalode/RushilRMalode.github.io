@@ -280,6 +280,19 @@ cv:
         icon: fa-solid fa-screwdriver-wrench
         keywords: "AutoDesk Fusion 360, Quartus Prime, KiCAD, GNU Radio, Git, Keil, LTSpice, NGSpice, LaTeX"
 
+    Key Courses Undertaken:
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "Human-Centred AI, Statistical Learning Theory, Advanced Topics in Machine Learning, Online Learning and Optimization, Game Theory and Algorithmic Mechanism Design, Natural Language Processing, Programming for Data Science"
+
+      - name: Electrical Engineering
+        icon: fa-solid fa-microchip
+        keywords: "Markov Chains and Queuing Systems, Probability and Random Processes, Signal Processing, Linear Algebra, Calculus, Communication Networks, Control Systems, Electromagnetic Waves, Electronic Devices & Circuits, Microprocessors, Analog Circuits, Digital Systems, Power Engineering"
+
+      - name: Others
+        icon: fa-solid fa-book
+        keywords: "Teaching Assistant Skill Enhancement & Training, Economics, Introduction to Entrepreneurship, Operations Analysis, Introduction to Bio-nanotechnology"
+
     Interests:
       - name: Filmmaking
         icon: fa-solid fa-clapperboard
