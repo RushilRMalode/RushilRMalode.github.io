@@ -6,7 +6,7 @@ subtitle: M.S. Student, Electrical and Computer Engineering (Machine Learning an
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>University of California, San Diego</p>

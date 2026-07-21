@@ -19,6 +19,7 @@ vendor
 # OS/editor junk
 desktop.ini
 
-# scratch files not part of the published site (CV lives in assets/pdf/)
+# scratch files not part of the published site (CV lives in assets/pdf/, profile pic in assets/img/)
 /Rushil_UCSD_CV.pdf
+/pfp_website.png
 films.txt
