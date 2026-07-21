@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: M.S. Student, Electrical and Computer Engineering (Machine Learning and Data Science), UC San Diego
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>University of California, San Diego</p>
+    <p>rmalode@ucsd.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Master's student in Electrical and Computer Engineering, specializing in Machine Learning and Data Science, at the University of California, San Diego (Fall'26 - Spring'28). Before this, I completed my B.Tech. in Electrical Engineering with a Minor in Artificial Intelligence and Data Science at the Indian Institute of Technology, Bombay (Fall'22 - Spring'26), graduating with a CPI of 8.29/10.00.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests span machine learning theory and applications, including embedding robustness, multi-armed bandits, and interpretable ML. I'm currently working on robust embedding selection for canonical data mapping under Prof. Saket Choudhary at the Koita Centre for Digital Health, and completed my bachelor's thesis on best-arm identification in correlated grouped bandits under Prof. Sharayu Moharir. I've also worked on network inversion for CNNs, interpretable credit risk scoring at ICICI Bank, and research collaborations with the Max Planck Institute for Radio Astronomy and TU Wien Informatics.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Feel free to check out my [CV](/cv/) for more details on my research, projects, and experience.

@@ -15,3 +15,10 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# OS/editor junk
+desktop.ini
+
+# scratch files not part of the published site (CV lives in assets/pdf/)
+/Rushil_UCSD_CV.pdf
+films.txt
