@@ -23,3 +23,16 @@ overrides:
     reason: >
       Render each project entry as its own card in a responsive grid
       instead of a single shared list-group.
+
+  - path: _includes/cv/experience.liquid
+    owner_gem: al_folio_cv
+    owner_gem_version: "1.0.0"
+    upstream_path: templates/cv/experience.liquid
+    upstream_sha256: 35924ec994852bc967d9d3880927ec228037a17683231b3a83fc8e585ef5fe09
+    local_sha256: 76c4401789231e23ec7fc1909e2111c35deeabda82825217c6d721cdd28e5d42
+    reason: >
+      Removed the entry.highlights bullet-list rendering block. This site's
+      Experience data model no longer carries highlights: each entry now
+      carries a single condensed 1-2 sentence summary instead of a bullet
+      list, so only entry.summary renders below the position/company
+      headers.
