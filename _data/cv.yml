@@ -32,7 +32,7 @@ cv:
         end_date: 2026-05
         score: "CPI: 8.29/10.00"
 
-    Research Experience:
+    Experience:
       - company: Saket Lab, IIT Bombay
         position: Robust Embedding Selection for Canonical Data Mapping
         location: Koita Centre for Digital Health (KCDH)
@@ -44,6 +44,18 @@ cv:
           - Modeled embedding robustness by injecting directional Gaussian noise on the von Mises-Fisher (vMF) distribution
           - Engineered a dimension-scaled adjustment to standardize noise concentrations across embedding dimensions
           - Investigating theoretical guarantees on retrieval accuracy under the modeled embedding perturbations
+
+      - company: ICICI Bank
+        position: Interpretable Machine Learning for Credit Risk Scoring
+        location: Risk Team
+        summary: Internship project on credit risk scoring
+        start_date: 2025-05
+        end_date: 2025-07
+        highlights:
+          - Implemented classification models for risk based borrower segmentation to enhance loan approval decisions
+          - Analyzed and processed 2.2M+ loan records and 150+ borrower features to uncover insights on borrower behaviour
+          - Achieved 0.68 ROC-AUC on training 7 neural and tree-based ML models including XGBoost and LightGBM
+          - Implemented Shapley Additive Explanations and Counterfactual Explanations to enhance transparency
 
       - company: Stochastic Systems Lab, IIT Bombay
         position: Best Arm Identification in Correlated Grouped Bandits
@@ -90,20 +102,7 @@ cv:
           - Understood KLM in Approximating Volume of Unions and Approximate Weighted Model Integration
           - Developed an algorithm for the setting by devising a novel density based sampling logic and extending the size estimation streaming algorithm from Estimating Size of the Union of Sets in Streaming Model for volumes
 
-    Professional Experience:
-      - company: ICICI Bank
-        position: Interpretable Machine Learning for Credit Risk Scoring
-        location: Risk Team
-        summary: Internship project on credit risk scoring
-        start_date: 2025-05
-        end_date: 2025-07
-        highlights:
-          - Implemented classification models for risk based borrower segmentation to enhance loan approval decisions
-          - Analyzed and processed 2.2M+ loan records and 150+ borrower features to uncover insights on borrower behaviour
-          - Achieved 0.68 ROC-AUC on training 7 neural and tree-based ML models including XGBoost and LightGBM
-          - Implemented Shapley Additive Explanations and Counterfactual Explanations to enhance transparency
-
-    Academic Projects:
+    Projects:
       - name: "Marked System-2 Recommenders (CS 6103: Human Centred AI)"
         summary: Guide - Prof. Arpit Agarwal, Department of Computer Science and Engineering
         start_date: 2026-01
@@ -208,7 +207,6 @@ cv:
           - Designed and implemented 10+ components on Intel Quartus including Sequence Generators and FSMs
           - Verified the designed components by manual hardware testing and scan-chain on the FPGA XEN-10 boards
 
-    Additional Projects:
       - name: Quantum Computing with Qiskit
         summary: Maths and Physics Club, IIT Bombay
         start_date: 2024-01
@@ -236,7 +234,7 @@ cv:
           - Analyzed the impact of credit scores and credit cycles on fintech P2P, populace and business lending firms
           - Achieved over 80% accuracy by building a default-based credit model on 10+ features using Random Forest
 
-    Leadership and Teaching:
+    Volunteer:
       - company: ShARE, IIT Bombay
         position: Senior Student Consultant
         summary: "Future Leaders Program with 2800+ students from over 100+ top universities across 41 countries"
@@ -266,30 +264,32 @@ cv:
 
     Skills:
       - name: Languages
-        level: ""
+        level: Proficient
         icon: fa-solid fa-code
         keywords: "Python, C++, C, VHDL, Embedded C, Assembly, HTML"
 
       - name: Libraries
-        level: ""
+        level: Proficient
         icon: fa-solid fa-cubes
         keywords: "PyTorch, TensorFlow, Keras, NumPy, SciPy, Pandas, Scikit-learn, Matplotlib, OpenCV, Astropy, NLTK"
 
       - name: Software
-        level: ""
+        level: Proficient
         icon: fa-solid fa-screwdriver-wrench
         keywords: "AutoDesk Fusion 360, Quartus Prime, KiCAD, GNU Radio, Git, Keil, LTSpice, NGSpice, LaTeX"
 
-    Key Courses Undertaken:
-      - name: Machine Learning
+      - name: "Coursework: Machine Learning"
+        level: Completed
         icon: fa-solid fa-brain
         keywords: "Human-Centred AI, Statistical Learning Theory, Advanced Topics in Machine Learning, Online Learning and Optimization, Game Theory and Algorithmic Mechanism Design, Natural Language Processing, Programming for Data Science"
 
-      - name: Electrical Engineering
+      - name: "Coursework: Electrical Engineering"
+        level: Completed
         icon: fa-solid fa-microchip
         keywords: "Markov Chains and Queuing Systems, Probability and Random Processes, Signal Processing, Linear Algebra, Calculus, Communication Networks, Control Systems, Electromagnetic Waves, Electronic Devices & Circuits, Microprocessors, Analog Circuits, Digital Systems, Power Engineering"
 
-      - name: Others
+      - name: "Coursework: Other"
+        level: Completed
         icon: fa-solid fa-book
         keywords: "Teaching Assistant Skill Enhancement & Training, Economics, Introduction to Entrepreneurship, Operations Analysis, Introduction to Bio-nanotechnology"
 
