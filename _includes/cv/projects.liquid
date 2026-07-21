@@ -1,0 +1,38 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_cv's templates/cv/projects.liquid (gem version 1.0.0).
+  Site-specific customization: each project renders in its own card in a
+  responsive grid, instead of all projects sharing one list-group inside a
+  single card. Track in .al-folio-overrides.yml.
+{% endcomment %}
+
+<div class="row mt-2">
+  {% for entry in entries %}
+    <div class="col-12 col-md-6 mt-3">
+      <div class="card h-100 p-3">
+        {% if entry.url %}
+          <h6 class="title font-weight-bold">
+            <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+          </h6>
+        {% else %}
+          <h6 class="title font-weight-bold">{{ entry.name }}</h6>
+        {% endif %}
+
+        {% if entry.summary %}
+          <p class="font-weight-light" style="font-size: 0.9rem; font-style: italic">
+            {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+          </p>
+        {% endif %}
+
+        {% if entry.highlights %}
+          <ul class="items">
+            {% for item in entry.highlights %}
+              <li>
+                <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

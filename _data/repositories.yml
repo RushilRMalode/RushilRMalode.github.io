@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - RushilRMalode
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - RushilRMalode/RushilRMalode.github.io
+  - RushilRMalode/XorNet-from-scratch-using-scalar-autodiff-engine
+  - RushilRMalode/IITB-CPU
+  - RushilRMalode/CS626-IITB-NLP
+  - RushilRMalode/NDAP-Energy-Data-Analysis-and-Consumer-Segmentation-
+  - RushilRMalode/Google-Quick-Draw-CNN
+  - RushilRMalode/Logistic-Regression-using-Numpy-and-Pandas-on-diabetes-dataset
+  - RushilRMalode/tictactoe-solver

@@ -3,8 +3,7 @@ layout: page
 title: films
 permalink: /films/
 description: Short films from my time as Assistant Director and script-writer with SilverScreen, IIT Bombay's filmmaking team, made for the Inter-IIT Cultural Meet.
-nav: true
-nav_order: 9
+nav: false
 ---
 
 <div class="row mt-3">

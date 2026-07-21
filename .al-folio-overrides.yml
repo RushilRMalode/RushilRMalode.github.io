@@ -1,0 +1,25 @@
+# Tracks local shadows of gem-owned files, per docs/BOUNDARIES.md.
+# Re-diff against upstream whenever the owning gem is bumped in the Gemfile.
+overrides:
+  - path: _includes/cv/render.liquid
+    owner_gem: al_folio_cv
+    owner_gem_version: "1.0.0"
+    upstream_path: templates/cv/render.liquid
+    upstream_sha256: 89c9ce23250ace91325d69ae0b8fab67ecc31466de1f09f91958c745e98a2324
+    local_sha256: 0dd1a04e30618fd83b335174b3e00674f1e6b473809fafc3eaa65c815f017673
+    reason: >
+      Render Experience and Volunteer as two separate cards instead of
+      merging them into one; render Projects as a grid of individual cards
+      instead of one shared list inside a single card; add a scoped CSS fix
+      for horizontal overflow caused by non-wrapping location strings in the
+      date column.
+
+  - path: _includes/cv/projects.liquid
+    owner_gem: al_folio_cv
+    owner_gem_version: "1.0.0"
+    upstream_path: templates/cv/projects.liquid
+    upstream_sha256: 4a9a33b8b402d75e0afa9c966979f11274d95cff9f6e605642f8fd6e56e8922d
+    local_sha256: ec1c91dcc3ef86a188ba58fa465c442330663bdc107b21e2d8cbb4c2106d27d2
+    reason: >
+      Render each project entry as its own card in a responsive grid
+      instead of a single shared list-group.
