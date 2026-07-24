@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S. Student, Electrical and Computer Engineering (Machine Learning and Data Science), UC San Diego
+subtitle: false
 
 profile:
   align: right
@@ -25,9 +25,10 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+Hi! I am Rushil, an incoming Fall 2026 Master's student in the ECE department at University of California San Diego (UCSD), specializing in Machine Learning and Data Science. I graduated with a B.Tech. degree in Electrical Engineering with a Minor in Data Science from IIT, Bombay. My interests span machine learning theory and applications, including robust and interpretable ML, Reinforcement Learning and generative models.
 
-I'm a Master's student in Electrical and Computer Engineering, specializing in Machine Learning and Data Science, at the University of California, San Diego (Fall'26 - Spring'28). Before this, I completed my B.Tech. in Electrical Engineering with a Minor in Artificial Intelligence and Data Science at the Indian Institute of Technology, Bombay (Fall'22 - Spring'26), graduating with a CPI of 8.29/10.00.
+I am currently working with Prof. Saket Choudhary at KCDH, IITB, on the project Alethia for data mapping. Recently during the Fall of 2025, I have completed my Bachelor's thesis on Correlation in Grouped Multi-Armed Bandits under Prof. Sharayu Moharir, and also worked on Network Inversion for CNNs under Prof. Amit Sethi. Previously during the Summer of 2025, I worked at ICICI bank on Interpretable Credit Default Classifiers. In addition to this, I was also a Student Consultant at ShARE IIT Bombay.
 
-My research interests span machine learning theory and applications, including embedding robustness, multi-armed bandits, and interpretable ML. I'm currently working on robust embedding selection for canonical data mapping under Prof. Saket Choudhary at the Koita Centre for Digital Health, and completed my bachelor's thesis on best-arm identification in correlated grouped bandits under Prof. Sharayu Moharir. I've also worked on network inversion for CNNs, interpretable credit risk scoring at ICICI Bank, and research collaborations with the Max Planck Institute for Radio Astronomy and TU Wien Informatics.
+Outside research, I absolutely enjoy filmmaking and photography. Check my films and photographs! 
 
 Feel free to check out my [CV](/cv/) for more details on my research, projects, and experience.

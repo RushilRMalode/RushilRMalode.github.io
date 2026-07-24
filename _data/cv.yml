@@ -36,40 +36,40 @@ cv:
       - company: Saket Lab, IIT Bombay
         position: Robust Embedding Selection for Canonical Data Mapping
         location: Koita Centre for Digital Health (KCDH)
-        summary: Developing a framework to select embedding and decoder models for mapping corrupted text entries to canonical keys, modeling embedding robustness via directional Gaussian noise on the von Mises-Fisher distribution with a dimension-scaled adjustment, and investigating theoretical guarantees on retrieval accuracy under these perturbations.
+        summary: Building a system that automatically matches messy, misspelled, or corrupted text entries (like "Jhon Smith" vs "John Smith") to their correct standard versions, by testing which AI language models are most resistant to noisy or error-filled input and proving mathematically how reliable the matches are.
         start_date: 2025-01
         end_date: Present
 
       - company: ICICI Bank
         position: Interpretable Machine Learning for Credit Risk Scoring
         location: Risk Team
-        summary: Built and evaluated 7 neural and tree-based machine learning models, including XGBoost and LightGBM, for risk-based borrower segmentation on 2.2M+ loan records and 150+ borrower features, achieving 0.68 ROC-AUC and applying SHAP and counterfactual explanations to improve transparency in loan approval decisions.
+        summary: Built and tested 7 machine learning models to predict how risky a loan applicant is, using data from 2.2 million+ past loans, and made the models' decisions explainable so loan officers can understand exactly why an application was approved or denied.
         start_date: 2025-05
         end_date: 2025-07
 
       - company: Stochastic Systems Lab, IIT Bombay
         position: Best Arm Identification in Correlated Grouped Bandits
         location: Department of Electrical Engineering
-        summary: Developing a novel best-arm-identification algorithm that exploits reward correlation in Grouped Multi-Armed Bandits, informed by a review of 37+ publications and validated on 10M+ simulated correlated rewards, achieving 50% lower complexity than the existing Grouped Bandit approach on the MovieLens and Goodreads datasets.
+        summary: Designing a smarter algorithm for quickly finding the "best option" out of many choices (like picking the top movie recommendation) by taking advantage of the fact that similar options tend to perform similarly, cutting the amount of testing needed by half compared to existing methods.
         start_date: 2025-08
         end_date: 2025-12
 
       - company: MeDAL Lab, IIT Bombay
         position: Network Inversion on Convolutional Neural Networks
         location: Department of Electrical Engineering
-        summary: Improved a generator-classifier architecture to reconstruct training-like data samples for MNIST, FMNIST, and CIFAR from classifiers trained on limited images, using gradient magnitude, cross-entropy, and KL-divergence signals, while working to improve reconstruction diversity and generalize the approach across standard network architectures.
+        summary: Improved a method for recreating realistic sample images (like handwritten digits and photos) from an AI model that was only shown a small number of training images, and worked on making the recreated images more varied and the technique more broadly applicable to different AI models.
         start_date: 2025-08
         end_date: 2025-12
 
       - company: Max Planck Institute for Radio Astronomy
         position: CASI-3D U-Net for 13CO Bubble Prediction
-        summary: Applied a CASI-3D U-Net to processed SEDIGISM data cubes to detect and validate 13CO stellar bubbles, tuning pixel feedback probability cutoffs for enhanced bubble-edge detection and cross-checking predicted positions against the WISE Catalog of Galactic HII Regions for positional accuracy.
+        summary: Used a deep learning model to automatically detect bubble-shaped structures in radio telescope images of the Milky Way (formed by young stars blowing out gas), fine-tuning the model to better trace bubble edges and checking its results against a known catalog of star-forming regions.
         start_date: 2024-06
         end_date: 2024-08
 
       - company: TU Wien Informatics
         position: Streaming Model for Volume of Union of Convex Bodies
-        summary: Designed a randomized streaming algorithm for estimating the volume of unions of convex bodies under space constraints, building on the Karp-Luby-Madras approximation and prior streaming size-estimation techniques via a novel density-based sampling approach.
+        summary: Designed an algorithm that can quickly estimate the total volume covered by many overlapping 3D shapes without needing to store all the data at once, building on existing statistical estimation techniques with a new sampling approach.
         start_date: 2024-06
         end_date: 2024-08
 
