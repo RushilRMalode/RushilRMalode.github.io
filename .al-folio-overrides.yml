@@ -6,13 +6,14 @@ overrides:
     owner_gem_version: "1.0.0"
     upstream_path: templates/cv/render.liquid
     upstream_sha256: 89c9ce23250ace91325d69ae0b8fab67ecc31466de1f09f91958c745e98a2324
-    local_sha256: 0dd1a04e30618fd83b335174b3e00674f1e6b473809fafc3eaa65c815f017673
+    local_sha256: b007edeb102c5b61fdd75a5067a1ed35fffee326c1a8acf3f98f1a0e3624dada
     reason: >
       Render Experience and Volunteer as two separate cards instead of
       merging them into one; render Projects as a grid of individual cards
-      instead of one shared list inside a single card; add a scoped CSS fix
-      for horizontal overflow caused by non-wrapping location strings in the
-      date column.
+      instead of one shared list inside a single card; add a scoped CSS
+      block that gives the date/location column a flex layout with matching
+      date and location icons, keeping the badge and location text aligned
+      and on a single line.
 
   - path: _includes/cv/projects.liquid
     owner_gem: al_folio_cv
@@ -29,10 +30,12 @@ overrides:
     owner_gem_version: "1.0.0"
     upstream_path: templates/cv/experience.liquid
     upstream_sha256: 35924ec994852bc967d9d3880927ec228037a17683231b3a83fc8e585ef5fe09
-    local_sha256: 76c4401789231e23ec7fc1909e2111c35deeabda82825217c6d721cdd28e5d42
+    local_sha256: 6d04a134544cd86c736a414a7adeb8475dd614240c132882fe4c0102bcb58a70
     reason: >
       Removed the entry.highlights bullet-list rendering block. This site's
       Experience data model no longer carries highlights: each entry now
       carries a single condensed 1-2 sentence summary instead of a bullet
       list, so only entry.summary renders below the position/company
-      headers.
+      headers. Also widened the date/location column from 2/12 to 3/12
+      columns, switched it from a <table> to a flex layout, and added a
+      calendar icon next to the date badge to match the location icon.

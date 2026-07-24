@@ -34,7 +34,7 @@ cv:
     Experience:
       - company: Saket Lab, IIT Bombay
         position: Robust Embedding Selection for Canonical Data Mapping
-        location: Koita Centre for Digital Health (KCDH)
+        location: Mumbai, India
         summary: Given a golden entry dataset, map dirty entries to the golden entries by choosing the best encoder/decoder model for the corrupted data without seeing the corrupted data beforehand
         start_date: 2026-05
         end_date: Present
@@ -48,14 +48,14 @@ cv:
 
       - company: Stochastic Systems Lab, IIT Bombay
         position: Best Arm Identification in Correlated Grouped Bandits
-        location: Department of Electrical Engineering
+        location: Mumbai, India
         summary: Incorporated correlation into the existing Grouped Bandits algorithm to improve sample complexity by upto 50% in best-arm identification
         start_date: 2025-08
         end_date: 2025-12
 
       - company: MeDAL Lab, IIT Bombay
         position: Network Inversion on Convolutional Neural Networks
-        location: Department of Electrical Engineering
+        location: Mumbai, India
         summary: Worked towards recreating training-like data from pre-trained CNNs by exploiting inherent properties and inverting the network using generative models
         start_date: 2025-08
         end_date: 2025-12

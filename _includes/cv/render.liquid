@@ -5,8 +5,9 @@
        hard-merges them into a single "Experience" card).
     2. Projects render as a responsive grid of individual cards, one per
        project, instead of a single shared list-group inside one card.
-    3. A small scoped <style> block fixes horizontal overflow caused by
-       `white-space: nowrap` on long location strings in the date column.
+    3. A small scoped <style> block gives the date/location column a flex
+       layout with matching date and location icons, keeping the badge and
+       location text aligned and on a single line.
   Track in .al-folio-overrides.yml; re-diff against upstream on al_folio_cv
   gem bumps (see docs/BOUNDARIES.md).
 {% endcomment %}
@@ -207,15 +208,42 @@
         {% endfor %}
 
         <style>
-          /* Fix horizontal overflow: long location strings must wrap instead of
-             forcing the narrow date column wider than its card. */
+          /* Date/location column: consistent icon + single-line text alignment.
+             The date column is wide enough (see experience.liquid col-md-3) and
+             location strings are kept short, so both the date badge and the
+             location line fit on one line without wrapping or overflowing. */
+          .date-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .date-column .date-location-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+          }
+          .date-column .date-row,
+          .date-column .location-row {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+          }
+          .date-column .icondate,
+          .date-column .iconlocation {
+            color: var(--global-theme-color);
+            font-size: 0.8rem;
+          }
           .date-column p.location {
-            white-space: normal;
-            overflow-wrap: break-word;
-            word-break: break-word;
+            margin: 0;
+            white-space: nowrap;
+            overflow-wrap: normal;
+            word-break: normal;
           }
           .date-column .badge {
             white-space: nowrap;
+            min-width: 75px;
           }
         </style>
 

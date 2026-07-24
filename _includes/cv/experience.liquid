@@ -1,10 +1,15 @@
 {% comment %}
   LOCAL OVERRIDE of al_folio_cv's templates/cv/experience.liquid (gem version 1.0.0).
-  Site-specific customization vs. upstream: this site's Experience data model no
-  longer carries `highlights` (bullet lists were condensed into a single
-  `summary` sentence per entry in _data/cv.yml), so the highlights rendering
-  block has been removed entirely. Only entry.summary renders below the
-  position/company headers.
+  Site-specific customization vs. upstream:
+    1. This site's Experience data model no longer carries `highlights`
+       (bullet lists were condensed into a single `summary` sentence per
+       entry in _data/cv.yml), so the highlights rendering block has been
+       removed entirely. Only entry.summary renders below the
+       position/company headers.
+    2. The date/location column was widened (2/12 -> 3/12 cols) and switched
+       from a <table> to a flex layout so the date badge and location line
+       up consistently and location text fits on a single line. A calendar
+       icon was added next to the date badge to match the location icon.
   Track in .al-folio-overrides.yml; re-diff against upstream on al_folio_cv
   gem bumps (see docs/BOUNDARIES.md).
 {% endcomment %}
@@ -13,7 +18,7 @@
   {% for entry in entries %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+        <div class="col-12 col-sm-4 col-md-3 text-center date-column">
           {% capture start_date %}
             {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
           {% endcapture %}
@@ -30,30 +35,25 @@
             {% assign date = '' %}
           {% endif %}
 
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
-                </td>
-              </tr>
-              {% capture location %}
-                {% if entry.location %}{{ entry.location }}{% endif %}
-              {% endcapture %}
-              {% if location != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
+          <div class="date-location-block">
+            {% if date != '' %}
+              <div class="date-row">
+                <i class="fa-solid fa-calendar-days icondate"></i>
+                <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">{{ date }}</span>
+              </div>
+            {% endif %}
+            {% capture location %}
+              {% if entry.location %}{{ entry.location }}{% endif %}
+            {% endcapture %}
+            {% if location != '' %}
+              <div class="location-row">
+                <i class="fa-solid fa-location-dot iconlocation"></i>
+                <p class="location">{{ location }}</p>
+              </div>
+            {% endif %}
+          </div>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+        <div class="col-12 col-sm-8 col-md-9 mt-2 mt-md-0">
           {% capture position_title %}
             {% if entry.position %}{{ entry.position }}{% endif %}
           {% endcapture %}
