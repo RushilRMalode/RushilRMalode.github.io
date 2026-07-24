@@ -4,7 +4,7 @@ cv:
   email: rmalode@ucsd.edu
   location: San Diego, CA
   image: ""
-  summary: M.S. student in Electrical and Computer Engineering (Machine Learning and Data Science) at UC San Diego, and B.Tech. graduate in Electrical Engineering (Minor in AI & Data Science) from IIT Bombay.
+  summary: M.S. student in ECE (ML&DS) at UC San Diego, and B.Tech. graduate in EE (Minor in AI & Data Science) from IIT Bombay.
 
   social_networks:
     - network: GitHub
@@ -19,10 +19,10 @@ cv:
     Education:
       - institution: University of California, San Diego
         location: San Diego, CA
-        area: Electrical and Computer Engineering, Machine Learning and Data Science
+        area: ECE, Machine Learning and Data Science
         studyType: Master of Science
         start_date: 2026-09
-        end_date: 2028-06
+        end_date: 2028-06 (Expected)
 
       - institution: Indian Institute of Technology, Bombay
         location: Mumbai, India
@@ -30,46 +30,41 @@ cv:
         studyType: B.Tech.
         start_date: 2022-09
         end_date: 2026-05
-        score: "CPI: 8.29/10.00"
 
     Experience:
       - company: Saket Lab, IIT Bombay
         position: Robust Embedding Selection for Canonical Data Mapping
         location: Koita Centre for Digital Health (KCDH)
-        summary: Building a system that automatically matches messy, misspelled, or corrupted text entries (like "Jhon Smith" vs "John Smith") to their correct standard versions, by testing which AI language models are most resistant to noisy or error-filled input and proving mathematically how reliable the matches are.
-        start_date: 2025-01
+        summary: Given a golden entry dataset, map dirty entries to the golden entries by choosing the best encoder/decoder model for the corrupted data without seeing the corrupted data beforehand
         end_date: Present
 
-      - company: ICICI Bank
+      - company: ICICI Bank, Risk Team
         position: Interpretable Machine Learning for Credit Risk Scoring
-        location: Risk Team
-        summary: Built and tested 7 machine learning models to predict how risky a loan applicant is, using data from 2.2 million+ past loans, and made the models' decisions explainable so loan officers can understand exactly why an application was approved or denied.
-        start_date: 2025-05
+        location: Mumbai, India
+        summary: Built and compared interpretable classifiers using ShAP and DICE to provide a credit risk score for loan applicants, and used counterfactuals to provide insights into the model decisions.
         end_date: 2025-07
 
       - company: Stochastic Systems Lab, IIT Bombay
         position: Best Arm Identification in Correlated Grouped Bandits
         location: Department of Electrical Engineering
-        summary: Designing a smarter algorithm for quickly finding the "best option" out of many choices (like picking the top movie recommendation) by taking advantage of the fact that similar options tend to perform similarly, cutting the amount of testing needed by half compared to existing methods.
+        summary: Incorporated correlation into the existing Grouped Bandits algorithm to improve sample complexity by upto 50% in best-arm identification
         start_date: 2025-08
         end_date: 2025-12
 
       - company: MeDAL Lab, IIT Bombay
         position: Network Inversion on Convolutional Neural Networks
         location: Department of Electrical Engineering
-        summary: Improved a method for recreating realistic sample images (like handwritten digits and photos) from an AI model that was only shown a small number of training images, and worked on making the recreated images more varied and the technique more broadly applicable to different AI models.
-        start_date: 2025-08
+        summary: Worked towards recreating training-like data from pre-trained CNNs by exploiting inherent properties and inverting the network using generative models
         end_date: 2025-12
 
       - company: Max Planck Institute for Radio Astronomy
         position: CASI-3D U-Net for 13CO Bubble Prediction
-        summary: Used a deep learning model to automatically detect bubble-shaped structures in radio telescope images of the Milky Way (formed by young stars blowing out gas), fine-tuning the model to better trace bubble edges and checking its results against a known catalog of star-forming regions.
+        summary: Used CASI-3D U-Net to predict 13CO bubbles in the Milky Way from 3D data cubes, processed datacubes to better identify edges and compared the results with H2 bubble positions to validate the model's performance.
         start_date: 2024-06
         end_date: 2024-08
 
       - company: TU Wien Informatics
         position: Streaming Model for Volume of Union of Convex Bodies
-        summary: Designed an algorithm that can quickly estimate the total volume covered by many overlapping 3D shapes without needing to store all the data at once, building on existing statistical estimation techniques with a new sampling approach.
-        start_date: 2024-06
+        summary: Worked on a memory-limited randomized streaming model to compute the volume of union of arbitrary dimensional convex bodies based on Karp-Luby Madras Algorithm
         end_date: 2024-08
 

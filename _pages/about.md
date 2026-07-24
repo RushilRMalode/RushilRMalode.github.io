@@ -25,7 +25,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Hi! I am Rushil, an incoming Fall 2026 Master's student in the ECE department at University of California San Diego (UCSD), specializing in Machine Learning and Data Science. I graduated with a B.Tech. degree in Electrical Engineering with a Minor in Data Science from IIT, Bombay. My interests span machine learning theory and applications, including robust and interpretable ML, Reinforcement Learning and generative models.
+Hi! I am Rushil, an incoming Fall 2026 Master's student in the ECE department at University of California San Diego (UCSD), specializing in Machine Learning and Data Science. I graduated with a B.Tech. degree in Electrical Engineering with a Minor in Data Science from IIT Bombay. My interests span machine learning theory and applications, including robust and interpretable ML, Reinforcement Learning and generative models.
 
 I am currently working with Prof. Saket Choudhary at KCDH, IITB, on the project Alethia for data mapping. Recently during the Fall of 2025, I have completed my Bachelor's thesis on Correlation in Grouped Multi-Armed Bandits under Prof. Sharayu Moharir, and also worked on Network Inversion for CNNs under Prof. Amit Sethi. Previously during the Summer of 2025, I worked at ICICI bank on Interpretable Credit Default Classifiers. In addition to this, I was also a Student Consultant at ShARE IIT Bombay.
 
