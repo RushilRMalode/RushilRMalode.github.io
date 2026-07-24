@@ -3,7 +3,7 @@ layout: book-review
 title: A Thousand Splendid Suns
 author: Mario Puzo
 cover: assets/img/book_covers/the_godfather.jpg
-date: 2024-08-23
+date: 2026-07-25
 status: In Progress
 ---
 
