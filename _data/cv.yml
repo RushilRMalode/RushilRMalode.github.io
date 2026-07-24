@@ -66,5 +66,6 @@ cv:
       - company: TU Wien Informatics
         position: Streaming Model for Volume of Union of Convex Bodies
         summary: Worked on a memory-limited randomized streaming model to compute the volume of union of arbitrary dimensional convex bodies based on Karp-Luby Madras Algorithm
+        start_date: 2024-06        
         end_date: 2024-08
 
