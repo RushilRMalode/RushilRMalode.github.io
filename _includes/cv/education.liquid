@@ -1,16 +1,12 @@
 {% comment %}
-  LOCAL OVERRIDE of al_folio_cv's templates/cv/experience.liquid (gem version 1.0.0).
+  LOCAL OVERRIDE of al_folio_cv's templates/cv/education.liquid (gem version 1.0.0).
   Site-specific customization vs. upstream:
-    1. This site's Experience data model no longer carries `highlights`
-       (bullet lists were condensed into a single `summary` sentence per
-       entry in _data/cv.yml), so the highlights rendering block has been
-       removed entirely. Only entry.summary renders below the
-       position/company headers.
-    2. The date/location column was widened (2/12 -> 3/12 cols) and switched
-       from a <table> to a flex layout so the date badge and location line
-       up consistently and location text fits on a single line. A calendar
-       icon was added next to the date badge to match the location icon.
-    3. The location check now tests `entry.location` directly instead of a
+    1. The date/location column was widened (2/12 -> 3/12 cols) and switched
+       from a <table> to a flex layout, matching the Experience card, so the
+       date badge and location line up consistently and location text fits
+       on a single line. A calendar icon was added next to the date badge to
+       match the location icon.
+    2. The location check now tests `entry.location` directly instead of a
        `capture`'d/whitespace-padded string compared to `''` (upstream's
        pattern), which incorrectly evaluated truthy and rendered a bare
        location icon even for entries with no location.
@@ -55,29 +51,39 @@
           </div>
         </div>
         <div class="col-12 col-sm-8 col-md-9 mt-2 mt-md-0">
-          {% capture position_title %}
-            {% if entry.position %}{{ entry.position }}{% endif %}
+          {% capture study_type %}
+            {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
           {% endcapture %}
 
           {% if entry.url %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ position_title }}</a>
+              <a href="{{ entry.url }}">{{ study_type }}</a>
             </h6>
-          {% elsif position_title != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
+          {% elsif study_type != '' %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ study_type }}</h6>
           {% endif %}
 
-          {% capture company_name %}
-            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
-          {% endcapture %}
-          {% if company_name != '' %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
+          {% if entry.institution %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
           {% endif %}
 
-          {% if entry.summary %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
-              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-            </h6>
+          {% if entry.area %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ entry.area }}</h6>
+          {% endif %}
+
+          {% if entry.courses or entry.highlights %}
+            <ul class="items">
+              {% for item in entry.courses %}
+                <li>
+                  <span class="item">{{ item }}</span>
+                </li>
+              {% endfor %}
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
           {% endif %}
         </div>
       </div>

@@ -30,7 +30,7 @@ overrides:
     owner_gem_version: "1.0.0"
     upstream_path: templates/cv/experience.liquid
     upstream_sha256: 35924ec994852bc967d9d3880927ec228037a17683231b3a83fc8e585ef5fe09
-    local_sha256: 6d04a134544cd86c736a414a7adeb8475dd614240c132882fe4c0102bcb58a70
+    local_sha256: a9db97f3cae217f588fb3f31093fa76ffef3db63b8fd699b69c0631aa82b7a49
     reason: >
       Removed the entry.highlights bullet-list rendering block. This site's
       Experience data model no longer carries highlights: each entry now
@@ -38,4 +38,23 @@ overrides:
       list, so only entry.summary renders below the position/company
       headers. Also widened the date/location column from 2/12 to 3/12
       columns, switched it from a <table> to a flex layout, and added a
-      calendar icon next to the date badge to match the location icon.
+      calendar icon next to the date badge to match the location icon. The
+      location check now tests `entry.location` directly instead of a
+      `capture`'d/whitespace-padded string compared to `''`, which
+      incorrectly evaluated truthy and rendered a bare location icon even
+      for entries with no location.
+
+  - path: _includes/cv/education.liquid
+    owner_gem: al_folio_cv
+    owner_gem_version: "1.0.0"
+    upstream_path: templates/cv/education.liquid
+    upstream_sha256: 26b8331fcec5be5d7b56431e708fb2df108d463a5494577467f53c1dead8aa27
+    local_sha256: 49969f8377f9b6784db0b5d395ab3e37a86ae006a26992a0b38c79cb1ba7b623
+    reason: >
+      Widened the date/location column from 2/12 to 3/12 columns, switched
+      it from a <table> to a flex layout, and added a calendar icon next to
+      the date badge to match the location icon, mirroring the Experience
+      card. The location check now tests `entry.location` directly instead
+      of a `capture`'d/whitespace-padded string compared to `''`, which
+      incorrectly evaluated truthy and rendered a bare location icon even
+      for entries with no location.
