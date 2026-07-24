@@ -10,60 +10,37 @@ images:
 
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/1.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 1</div>
+        {% include figure.liquid path="assets/img/Cat_in_a_bush.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">A cat in near my home</div>
     </div>
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/2.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 2</div>
+        {% include figure.liquid path="assets/img/Fisherman_Hand.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">A hand of a fisherman in Kolhapur, India</div>
     </div>
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/3.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 3</div>
-    </div>
-</div>
-
-<div class="row row-cols-1 row-cols-md-3">
-    <div class="col mt-3">
-        {% include figure.liquid path="assets/img/4.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 4</div>
-    </div>
-    <div class="col mt-3">
-        {% include figure.liquid path="assets/img/5.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 5</div>
-    </div>
-    <div class="col mt-3">
-        {% include figure.liquid path="assets/img/6.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 6</div>
+        {% include figure.liquid path="assets/img/Kolhapur_Marketplace.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">A small marketplace in Kolhapur</div>
     </div>
 </div>
 
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 7</div>
+        {% include figure.liquid path="assets/img/Man_in_a_train.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">A passenger in the Mumbai Local</div>
     </div>
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 8</div>
+        {% include figure.liquid path="assets/img/SoBo_Torch.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">A torch-like sculpture outside a house in South Bombay</div>
     </div>
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 9</div>
+        {% include figure.liquid path="assets/img/Security_guy.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Men outside a store in Kolhapur, India</div>
     </div>
 </div>
 
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mt-3">
-        {% include figure.liquid path="assets/img/10.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 10</div>
-    </div>
-    <div class="col mt-3">
-        {% include figure.liquid path="assets/img/11.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 11</div>
-    </div>
-    <div class="col mt-3">
-        {% include figure.liquid path="assets/img/12.jpg" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">Photo 12</div>
+        {% include figure.liquid path="assets/img/Lotus.jpg" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Evidently, a lotus</div>
     </div>
 </div>
