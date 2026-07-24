@@ -12,4 +12,6 @@ children:
     permalink: /blog/
   - title: films
     permalink: /films/
+  - title: photography
+    permalink: /photography/
 ---
