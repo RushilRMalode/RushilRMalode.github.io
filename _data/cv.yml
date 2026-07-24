@@ -36,12 +36,14 @@ cv:
         position: Robust Embedding Selection for Canonical Data Mapping
         location: Koita Centre for Digital Health (KCDH)
         summary: Given a golden entry dataset, map dirty entries to the golden entries by choosing the best encoder/decoder model for the corrupted data without seeing the corrupted data beforehand
+        start_date: 2026-05
         end_date: Present
 
       - company: ICICI Bank, Risk Team
         position: Interpretable Machine Learning for Credit Risk Scoring
         location: Mumbai, India
         summary: Built and compared interpretable classifiers using ShAP and DICE to provide a credit risk score for loan applicants, and used counterfactuals to provide insights into the model decisions.
+        start_date: 2026-05
         end_date: 2025-07
 
       - company: Stochastic Systems Lab, IIT Bombay
@@ -55,6 +57,7 @@ cv:
         position: Network Inversion on Convolutional Neural Networks
         location: Department of Electrical Engineering
         summary: Worked towards recreating training-like data from pre-trained CNNs by exploiting inherent properties and inverting the network using generative models
+        start_date: 2025-08
         end_date: 2025-12
 
       - company: Max Planck Institute for Radio Astronomy
